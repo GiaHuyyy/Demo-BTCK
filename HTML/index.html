@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
         <script src="../JS/jquery-3.6.4.min.js"></script>
         <script src="../JS/bootstrap.min.js"></script>
+        <script src="../JS/checkregex.js"></script>
     </head>
     <body>
         <div class="container p-0 position-relative border border-dark">
@@ -84,15 +85,15 @@
                         </div>
                         <div class="modal-body">
                             <label for="" class="m-0 font-weight-bold">Mã bệnh nhân</label> 
-                            <input class="border border-2 rounded w-100 py-1 pl-3" type="text" placeholder="Ma benh nhan">
+                            <input id="txtMa" class="border border-2 rounded w-100 py-1 pl-3" type="text" placeholder="Ma benh nhan">
                             <label for="" class="font-weight-bold text-danger font-italic">(*)BN-YYYYYY</label> 
                             <br>
                             <label for="" class="m-0 font-weight-bold">Mật khẩu</label>
-                            <input class="border border-2 rounded w-100 py-1 pl-3" type="text" placeholder="Mat khau">
+                            <input id="txtPass" class="border border-2 rounded w-100 py-1 pl-3" type="text" placeholder="Mat khau">
                             <label for="" class="font-weight-bold text-danger font-italic">(*)</label>
                             <br>
                             <label for="" class="m-0 font-weight-bold">Ngày khám</label>
-                            <input class="border border-2 rounded w-100 py-1 pl-3 text-muted" type="date">
+                            <input id="txtNgayKham" class="border border-2 rounded w-100 py-1 pl-3 text-muted" type="date">
                             <label for="" class="font-weight-bold text-danger font-italic">(*)</label>
                             <br>
                             <label for="" class="font-weight-bold">Loại dịch vụ</label> <br>
@@ -103,8 +104,8 @@
                             <label for="" class="mt-3 font-weight-bold">Chuyên khoa</label>
                             <select name="" id="" class="w-100 border border-2 rounded py-1 pl-3">
                                 <option value="">Ngoại tổng quát</option>
-                                <option value="">Nội soi</option>
-                                <option value="">Chuẩn đoán</option>
+                                <option value="">Nhi</option>
+                                <option value="">Nội tổng quát</option>
                             </select>
                             <button type="button" class="btn btn-info mt-3">
                                Đặt lịch
